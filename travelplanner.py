@@ -10,7 +10,7 @@ st.title("Travel Planner - Shortest Path Using Google Maps API")
 st.write("This app calculates the shortest path between selected places using real-world distances.")
 
 # Get the API key from the environment variable or directly input it
-API_KEY = st.secrets["general"]["API_KEY"]  # Ensure your secrets.toml has this key
+API_KEY = st.secrets["API_KEY"]  # Ensure your secrets.toml has this key
 
 # Initialize the Google Maps API client
 gmaps = googlemaps.Client(key=API_KEY)
